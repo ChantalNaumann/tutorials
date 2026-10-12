@@ -1,0 +1,10 @@
+pyproject.toml
+neurostyle/__init__.py
+neurostyle.egg-info/PKG-INFO
+neurostyle.egg-info/SOURCES.txt
+neurostyle.egg-info/dependency_links.txt
+neurostyle.egg-info/requires.txt
+neurostyle.egg-info/top_level.txt
+neurostyle/styles/neuro-dark.mplstyle
+neurostyle/styles/neuro-talk.mplstyle
+neurostyle/styles/neuro.mplstyle

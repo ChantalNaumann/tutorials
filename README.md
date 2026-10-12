@@ -43,16 +43,4 @@ jupyter lab
 ```
 
 Needs matplotlib ≥ 3.7. Run the notebooks in order: each uses the style
-parts written by the previous ones. Ask students to set up the environment **before** the session.
-
-## For instructors
-
-* `reference/styles/`: the finished style files you get by running all notebooks unchanged
-  (`plt.style.use("reference/styles/neuro.mplstyle")` to try them).
-* `reference/previews/`: before/after, paper vs talk, and all toolbox recipes (`toolbox.png`).
-* `images/anatomy.png` is the labelled "parts of a figure" picture used in notebook 1.
-* Running late? Skip the exercises, and in notebook 4 just run the cells without discussing each one.
-
-### TODO
-- [ ] try the timing on a test audience
-- [ ] check the journal column widths against current author guidelines
+parts written by the previous ones.

@@ -1,0 +1,18 @@
+# neuro-science: the boxed "physics paper" look of SciencePlots.
+# Use on top of neuro:  plt.style.use(["neuro", "neuro-science"])
+
+# Close the box
+axes.spines.top: True
+axes.spines.right: True
+
+# Small ticks pointing in, on all four sides, with minor ticks
+xtick.direction: in
+ytick.direction: in
+xtick.top: True
+ytick.right: True
+xtick.minor.visible: True
+ytick.minor.visible: True
+xtick.major.size: 3
+ytick.major.size: 3
+xtick.minor.size: 1.5
+ytick.minor.size: 1.5
