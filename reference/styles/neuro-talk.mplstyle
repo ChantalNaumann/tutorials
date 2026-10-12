@@ -1,0 +1,17 @@
+# Slides. Use on top of neuro: plt.style.use(["neuro", "neuro-talk"])
+figure.figsize: 6.4, 4.0
+font.size: 16
+axes.labelsize: 16
+axes.titlesize: 16
+xtick.labelsize: 14
+ytick.labelsize: 14
+legend.fontsize: 14
+axes.linewidth: 1.2
+xtick.major.width: 1.2
+ytick.major.width: 1.2
+xtick.major.size: 6
+ytick.major.size: 6
+axes.labelpad: 4
+lines.linewidth: 2.5
+lines.markersize: 7
+savefig.format: png

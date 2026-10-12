@@ -1,0 +1,10 @@
+name: plotcourse
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy        # only for the toolbox (power spectra)
+  - matplotlib>=3.7
+  - jupyterlab
+  - pip

@@ -1,0 +1,66 @@
+# ---- 1 · Basics --------------------------------------------------------------
+# Final size: one journal column (inches). dpi only changes the size on screen.
+figure.figsize: 3.5, 2.6
+figure.dpi: 150
+
+# Fonts: Arial if available; 7 pt for all text
+font.family: sans-serif
+font.sans-serif: Arial, Helvetica, Liberation Sans, DejaVu Sans
+font.size: 7
+axes.labelsize: 7
+axes.titlesize: 7
+xtick.labelsize: 7
+ytick.labelsize: 7
+legend.fontsize: 7
+mathtext.default: regular
+
+# Open axes, short outward ticks, thin frame, thicker data
+axes.spines.top: False
+axes.spines.right: False
+xtick.direction: out
+ytick.direction: out
+xtick.major.size: 3
+ytick.major.size: 3
+axes.linewidth: 0.5
+xtick.major.width: 0.5
+ytick.major.width: 0.5
+lines.linewidth: 1.0
+legend.frameon: False
+
+# ---- 2 · Plots and color -----------------------------------------------------
+lines.markersize: 3
+legend.handlelength: 1.5
+
+# Heatmaps: fill the panel, perceptually uniform colormap
+image.aspect: auto
+image.cmap: viridis
+
+# Okabe-Ito color-blind-safe colors (hex WITHOUT '#')
+axes.prop_cycle: cycler('color', ['0072B2', 'D55E00', '009E73', 'CC79A7', 'E69F00', '56B4E9', 'F0E442', '000000'])
+
+# Box plots: black median, thin lines, small outliers
+boxplot.medianprops.color: black
+boxplot.boxprops.linewidth: 0.6
+boxplot.whiskerprops.linewidth: 0.6
+boxplot.capprops.linewidth: 0.6
+boxplot.flierprops.markersize: 2
+
+# ---- 3 · Paper ---------------------------------------------------------------
+figure.constrained_layout.use: True
+
+# fig.savefig("figure1") -> figure1.pdf, editable text, exact size
+savefig.format: pdf
+savefig.dpi: 300
+savefig.bbox: standard
+pdf.fonttype: 42
+
+# Real numbers on axes (no "+1.2e3"), and x10^5 instead of 1e5
+axes.formatter.useoffset: False
+axes.formatter.use_mathtext: True
+axes.formatter.limits: -3, 4
+
+# Tighter spacing, made for 7 pt text
+axes.labelpad: 2
+xtick.major.pad: 2
+ytick.major.pad: 2
+

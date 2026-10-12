@@ -1,0 +1,9 @@
+# Created while working through the notebooks
+style_parts/
+output/
+
+my_styles/
+__pycache__/
+.ipynb_checkpoints/
+figure1.pdf
+figure1.png
