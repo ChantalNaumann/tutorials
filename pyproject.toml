@@ -1,0 +1,15 @@
+[project]
+name = "plotcourse"
+version = "0.1.0"
+description = "Publication-quality figures with matplotlib, for neuroscientists"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "scipy",            # power spectra (notebooks 3 and 5)
+    "matplotlib>=3.7",
+    "jupyterlab",       # to run the notebooks in the browser: uv run jupyter lab
+    "ipykernel",        # to run the notebooks in VS Code
+]
+
+[tool.uv]
+package = false         # a folder of notebooks, not an installable package
