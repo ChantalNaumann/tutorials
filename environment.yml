@@ -4,7 +4,7 @@ channels:
 dependencies:
   - python=3.11
   - numpy
-  - scipy        # only for the toolbox (power spectra)
+  - scipy        # power spectra (notebooks 3 and 5)
   - matplotlib>=3.7
   - jupyterlab
   - pip
