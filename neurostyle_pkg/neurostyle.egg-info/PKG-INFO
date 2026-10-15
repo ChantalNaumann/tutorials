@@ -1,6 +1,0 @@
-Metadata-Version: 2.4
-Name: neurostyle
-Version: 0.1.0
-Summary: Matplotlib styles and helpers for neuroscience figures
-Requires-Python: >=3.9
-Requires-Dist: matplotlib>=3.7

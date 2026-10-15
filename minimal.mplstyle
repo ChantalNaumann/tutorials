@@ -1,0 +1,94 @@
+# minimal.mplstyle: as little ink as possible
+#   plt.style.use(["default", "minimal.mplstyle"])
+#
+# Only the first and last tick: a style file can't choose WHICH ticks are drawn, but it can make the
+# axis start and end on round numbers (axes.autolimit_mode below). After plotting, call
+#     def end_ticks(ax):
+#         ax.set_xticks(ax.get_xlim())
+#         ax.set_yticks(ax.get_ylim())
+# and only those two round numbers are left on each axis.
+
+# ---- Size and export ------------------------------------------------------------
+figure.figsize : 3.5, 2.625            # one journal column
+figure.dpi : 150                       # on screen only
+figure.constrained_layout.use : True
+savefig.dpi : 300
+savefig.bbox : tight
+savefig.pad_inches : 0.05
+pdf.fonttype : 42                      # editable text
+ps.fonttype : 42
+svg.fonttype : none
+
+# ---- Text: small, dark grey instead of black --------------------------------------
+font.family : sans-serif
+font.sans-serif : Arial, Helvetica, DejaVu Sans
+font.size : 7
+axes.labelsize : 7
+axes.titlesize : 7
+xtick.labelsize : 7
+ytick.labelsize : 7
+legend.fontsize : 7
+mathtext.default : regular             # $\Delta F/F$ in the same font as the rest
+text.color : 333333
+axes.labelcolor : 333333
+axes.titlelocation : left
+axes.titleweight : bold
+
+# ---- Axes: only left and bottom, thin, grey ----------------------------------------
+axes.spines.top : False
+axes.spines.right : False
+axes.linewidth : 0.5
+axes.edgecolor : 333333
+axes.grid : False
+axes.labelpad : 2
+
+# Axis limits end on round numbers, and the data touch them (no extra margin)
+axes.autolimit_mode : round_numbers
+axes.xmargin : 0
+axes.ymargin : 0
+axes.formatter.useoffset : False       # real numbers, no "+1.2e3" in the corner
+
+# ---- Ticks: few, short, outside, no minor ticks --------------------------------------
+xtick.direction : out
+ytick.direction : out
+xtick.major.size : 2
+ytick.major.size : 2
+xtick.major.width : 0.5
+ytick.major.width : 0.5
+xtick.major.pad : 1.5
+ytick.major.pad : 1.5
+xtick.minor.visible : False
+ytick.minor.visible : False
+xtick.top : False
+ytick.right : False
+xtick.color : 333333
+ytick.color : 333333
+
+# ---- Data: thin lines, small markers, muted colors ----------------------------------------
+lines.linewidth : 1.0
+lines.markersize : 3
+lines.solid_capstyle : round
+# Dark grey first, then Okabe-Ito vermillion, blue, green (color-blind safe), all solid lines
+axes.prop_cycle : cycler('color', ['333333', 'D55E00', '0072B2', '009E73', 'CC79A7', 'E69F00'])
+scatter.edgecolors : none
+errorbar.capsize : 0
+patch.linewidth : 0
+
+# ---- Legend: no frame, short line samples -------------------------------------------------
+legend.frameon : False
+legend.handlelength : 1.2
+legend.handletextpad : 0.4
+legend.borderaxespad : 0.2
+
+# ---- Box plots: thin, grey, black median ---------------------------------------------------
+boxplot.boxprops.linewidth : 0.5
+boxplot.whiskerprops.linewidth : 0.5
+boxplot.capprops.linewidth : 0.5
+boxplot.medianprops.color : 333333
+boxplot.medianprops.linewidth : 1.0
+boxplot.flierprops.markersize : 2
+boxplot.flierprops.markeredgewidth : 0.5
+
+# ---- Heatmaps ----------------------------------------------------------------------------
+image.aspect : auto
+image.cmap : viridis
